@@ -47,11 +47,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\boost_1_76_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\boost_1_76_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
@@ -80,7 +82,84 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="adam2_kernel.h" />
+    <ClInclude Include="adam_kernel.h" />
+    <ClInclude Include="batch_sum_kernel.h" />
     <ClInclude Include="cuMat.h" />
+    <ClInclude Include="header\adam2_kernel.h" />
+    <ClInclude Include="header\adam_kernel.h" />
+    <ClInclude Include="header\batch_sum_kernel.h" />
+    <ClInclude Include="header\cuMat.h" />
+    <ClInclude Include="header\dropout_kernel.h" />
+    <ClInclude Include="header\element_wise_clip_kernel.h" />
+    <ClInclude Include="header\im2col.h" />
+    <ClInclude Include="header\matlog_kernel.h" />
+    <ClInclude Include="header\matmod_kernel.h" />
+    <ClInclude Include="header\mat_cos_kernel.h" />
+    <ClInclude Include="header\mat_div_kernel.h" />
+    <ClInclude Include="header\mat_dot_product_kernel.h" />
+    <ClInclude Include="header\mat_exp_kernel.h" />
+    <ClInclude Include="header\mat_inverse_d_kernel.h" />
+    <ClInclude Include="header\mat_inverse_kernel.h" />
+    <ClInclude Include="header\mat_l2_kernel.h" />
+    <ClInclude Include="header\mat_log_kernel.h" />
+    <ClInclude Include="header\mat_mul_elementwise_kernel.h" />
+    <ClInclude Include="header\mat_mul_elementwise_plus_kernel.h" />
+    <ClInclude Include="header\mat_ones_kernel.h" />
+    <ClInclude Include="header\mat_sin_kernel.h" />
+    <ClInclude Include="header\mat_sqrt_d_kernel.h" />
+    <ClInclude Include="header\mat_sqrt_kernel.h" />
+    <ClInclude Include="header\mat_sum_kernel.h" />
+    <ClInclude Include="header\mat_vec_mul_kernel.h" />
+    <ClInclude Include="header\pooling.h" />
+    <ClInclude Include="header\prelu_d_kernel.h" />
+    <ClInclude Include="header\prelu_kernel.h" />
+    <ClInclude Include="header\relu_d_kernel.h" />
+    <ClInclude Include="header\relu_kernel.h" />
+    <ClInclude Include="header\sigmoid_d_kernel.h" />
+    <ClInclude Include="header\sigmoid_kernel.h" />
+    <ClInclude Include="header\slice_rows_kernel.h" />
+    <ClInclude Include="header\softmax_cross_entropy_kernel.h" />
+    <ClInclude Include="header\softmax_kernel.h" />
+    <ClInclude Include="header\tanh_d_kernel.h" />
+    <ClInclude Include="header\tanh_kernel.h" />
+    <ClInclude Include="header\vec_to_mat_kernel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="adam2_kernel.cu" />
+    <CudaCompile Include="batch_sum_kernel.cu" />
+    <CudaCompile Include="dropout_kernel.cu" />
+    <CudaCompile Include="element_wise_clip_kernel.cu" />
+    <CudaCompile Include="im2col.cu" />
+    <CudaCompile Include="mat_cos_kernel.cu" />
+    <CudaCompile Include="mat_div_kernel.cu" />
+    <CudaCompile Include="mat_dot_product_kernel.cu" />
+    <CudaCompile Include="mat_exp_kernel.cu" />
+    <CudaCompile Include="mat_inverse_d_kernel.cu" />
+    <CudaCompile Include="mat_inverse_kernel.cu" />
+    <CudaCompile Include="mat_l2_kernel.cu" />
+    <CudaCompile Include="mat_log_kernel.cu" />
+    <CudaCompile Include="mat_mul_elementwise_kernel.cu" />
+    <CudaCompile Include="mat_mul_elementwise_plus_kernel.cu" />
+    <CudaCompile Include="mat_ones_kernel.cu" />
+    <CudaCompile Include="mat_sin_kernel.cu" />
+    <CudaCompile Include="mat_sqrt_d_kernel.cu" />
+    <CudaCompile Include="mat_sqrt_kernel.cu" />
+    <CudaCompile Include="mat_sum_kernel.cu" />
+    <CudaCompile Include="mat_vec_mul_kernel.cu" />
+    <CudaCompile Include="pooling.cu" />
+    <CudaCompile Include="prelu_d_kernel.cu" />
+    <CudaCompile Include="prelu_kernel.cu" />
+    <CudaCompile Include="relu_d_kernel.cu" />
+    <CudaCompile Include="relu_kernel.cu" />
+    <CudaCompile Include="sigmoid_d_kernel.cu" />
+    <CudaCompile Include="sigmoid_kernel.cu" />
+    <CudaCompile Include="slice_rows_kernel.cu" />
+    <CudaCompile Include="softmax_cross_entropy_kernel.cu" />
+    <CudaCompile Include="softmax_kernel.cu" />
+    <CudaCompile Include="tanh_d_kernel.cu" />
+    <CudaCompile Include="tanh_kernel.cu" />
+    <CudaCompile Include="vec_to_mat_kernel.cu" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

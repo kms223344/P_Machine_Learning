@@ -869,7 +869,7 @@ public:
         if (mHost == NULL)
             this->memMallocHost();
         memDeviceToHost();
-        float max[cols];
+        float* max = new float[cols];
         for (int j = 0; j < cols; j++) {
             max[j] = 0;
         }

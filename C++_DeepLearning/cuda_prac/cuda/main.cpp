@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "cuMat.h"
+#include "header/cuMat.h"
 
 MallocCounter mallocCounter;
 
@@ -20,9 +20,9 @@ int main() {
 
 
 
-    int image_size = 5;
-    int channel_num = 3;
-    int batch_size = 2;
+    const int image_size = 5;
+    const int channel_num = 3;
+    const int batch_size = 2;
     float a[image_size * image_size * channel_num * batch_size] = {
             1,   2,   3,   4,   5,
             6,   7,   8,   9,   10,
