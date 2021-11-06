@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="cuMat\adam2_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\batch_sum_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\dropout_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\element_wise_clip_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\im2col.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_cos_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_div_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_dot_product_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_exp_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_inverse_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_inverse_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_l2_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_log_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_mul_elementwise_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_mul_elementwise_plus_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_ones_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_sin_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_sqrt_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_sqrt_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_sum_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\mat_vec_mul_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\pooling.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\prelu_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\prelu_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\relu_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\relu_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\sigmoid_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\sigmoid_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\slice_rows_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\softmax_cross_entropy_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\softmax_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\tanh_d_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\tanh_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuMat\vec_to_mat_kernel.cu">
+      <Filter>cuMat_cu</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cuMat_cu">
+      <UniqueIdentifier>{82904516-a953-4142-bd4b-841e8d94b7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuMat_h">
+      <UniqueIdentifier>{56478450-2b01-4ff9-84a0-3ba7bb04868d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cuMat\adam2_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\batch_sum_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\cuMat.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\dropout_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\element_wise_clip_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\im2col.h">
+      <Filter>cuMat_cu</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_cos_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_div_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_dot_product_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_exp_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_inverse_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_inverse_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_l2_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_log_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_mul_elementwise_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\adam_kernel.h">
+      <Filter>cuMat_cu</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_mul_elementwise_plus_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_ones_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_sin_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_sqrt_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_sqrt_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_sum_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\mat_vec_mul_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\matlog_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\matmod_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\pooling.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\prelu_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\prelu_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\relu_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\relu_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\sigmoid_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\sigmoid_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\slice_rows_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\softmax_cross_entropy_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\softmax_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\tanh_d_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\tanh_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+    <ClInclude Include="cuMat\vec_to_mat_kernel.h">
+      <Filter>cuMat_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+</Project>

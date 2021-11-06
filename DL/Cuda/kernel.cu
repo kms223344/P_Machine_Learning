@@ -1,29 +1,10 @@
 ﻿#include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include "common/cpu_bitmap.h"
-
+#include "cuMat/cuMat.h"
 #include<stdio.h>
 
 #define dim 1000
-
-struct cuComplex
-{
-	float r, i;
-	__device__ cuComplex(float a, float b) : r(a), i(b) {  }
-	__device__ float magnitude()
-	{
-		return r * r + i * i;
-	}
-	__device__ cuComplex operator*(const cuComplex& a)
-	{
-		return cuComplex(r * a.r - i * a.i, i * a.r + r * a.i);
-	}
-	__device__ cuComplex operator+(const cuComplex& a)
-	{
-		return cuComplex(r + a.r, i + a.i);
-	}
-
-};
 
 __device__ int julia(int x, int y)
 {
@@ -54,6 +35,7 @@ __global__ void kernel(unsigned char* ptr)
 }
 int main(void)
 {
+	cuMat a(2, 3), b(2, 3);
 	CPUBitmap bitmap(dim, dim);
 	unsigned char *dbitmap;
 	cudaMalloc((void**)&dbitmap, bitmap.image_size());
