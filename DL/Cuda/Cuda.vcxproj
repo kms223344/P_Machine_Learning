@@ -54,7 +54,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>cublas.lib;cudart.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cusparse64_11.dll;cublas.lib;cudart.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin;C:\boost_1_76_0\stage\lib;%(AdditionalLibraryDirectories);$(CudaToolkitLibDir);</AdditionalLibraryDirectories>
     </Link>
     <CudaCompile>
@@ -155,9 +155,26 @@
     <ClInclude Include="cuMat\tanh_d_kernel.h" />
     <ClInclude Include="cuMat\tanh_kernel.h" />
     <ClInclude Include="cuMat\vec_to_mat_kernel.h" />
+    <ClInclude Include="DL_mnist\batchdata.h" />
+    <ClInclude Include="DL_mnist\cuMatSparse.h" />
+    <ClInclude Include="DL_mnist\dataset.h" />
+    <ClInclude Include="DL_mnist\function.h" />
+    <ClInclude Include="DL_mnist\graph.h" />
+    <ClInclude Include="DL_mnist\iris.h" />
+    <ClInclude Include="DL_mnist\mnist.h" />
+    <ClInclude Include="DL_mnist\model.h" />
+    <ClInclude Include="DL_mnist\optimizer.h" />
+    <ClInclude Include="DL_mnist\optimizer_adam.h" />
+    <ClInclude Include="DL_mnist\optimizer_sgd_moment.h" />
+    <ClInclude Include="DL_mnist\variable.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="DL_mnist\dataset.cpp" />
+    <ClCompile Include="DL_mnist\function.cpp" />
+    <ClCompile Include="DL_mnist\graph.cpp" />
+    <ClCompile Include="DL_mnist\optimizer.cpp" />
+    <ClCompile Include="DL_mnist\test.cpp" />
+    <ClCompile Include="DL_mnist\variable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

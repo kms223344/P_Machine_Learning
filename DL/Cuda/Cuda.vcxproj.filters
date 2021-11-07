@@ -111,6 +111,9 @@
     <Filter Include="cuMat_h">
       <UniqueIdentifier>{56478450-2b01-4ff9-84a0-3ba7bb04868d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mnist">
+      <UniqueIdentifier>{7ea5860e-0dc0-42e6-b263-d2d15d653274}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cuMat\adam2_kernel.h">
@@ -227,8 +230,61 @@
     <ClInclude Include="cuMat\vec_to_mat_kernel.h">
       <Filter>cuMat_h</Filter>
     </ClInclude>
+    <ClInclude Include="DL_mnist\batchdata.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\cuMatSparse.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\dataset.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\function.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\graph.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\iris.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\mnist.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\model.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\optimizer.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\optimizer_adam.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\optimizer_sgd_moment.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_mnist\variable.h">
+      <Filter>mnist</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="DL_mnist\dataset.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_mnist\function.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_mnist\graph.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_mnist\optimizer.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_mnist\test.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_mnist\variable.cpp">
+      <Filter>mnist</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -9,7 +9,7 @@
 #include <thread>
 
 #include "model.h"
-#include "cuMat.h"
+#include "../cuMat/cuMat.h"
 #include "variable.h"
 
 
